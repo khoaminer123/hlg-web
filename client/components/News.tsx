@@ -13,7 +13,7 @@ const News: React.FC = () => {
       image: "https://i.ibb.co/hRb7zppk/image-2026-03-26-164535487.png",
       title: "Đời sống HLG",
       date: "Tết Trung Thu",
-      summary: "Tết Trung Thu không chỉ là ngày trăng tròn, mà còn là biệu tượng của đoàn viên, yêu thương và chia sẻ. Với HLG mùa trăng không chỉ là dịp để gắn kết mà còn là cơ hội để thắp sáng tinh thần đồng hành phát triển thịnh vượng cùng nhau. Tại đây chúng tôi không chỉ làm việc cùng nhau mà còn chung tay xây dựng một cộng đồng liên minh ngành nghề bền vững giúp cho mọi người có nền tảng tài chính ổn định và tương lai thịnh vượng.",
+      summary: "Tết Trung Thu không chỉ là ngày trăng tròn, mà còn là biểu tượng của đoàn viên, yêu thương và chia sẻ. Với HLG mùa trăng không chỉ là dịp để gắn kết mà còn là cơ hội để thắp sáng tinh thần đồng hành phát triển thịnh vượng cùng nhau. Tại đây chúng tôi không chỉ làm việc cùng nhau mà còn chung tay xây dựng một cộng đồng liên minh ngành nghề bền vững giúp cho mọi người có nền tảng tài chính ổn định và tương lai thịnh vượng.",
       category: 0
     },
     {

@@ -5,7 +5,7 @@ const ShareCertificate: React.FC = () => {
 
   const { user } = useAuth();
 
-  const shares = user?.shares ?? 1000;
+  const shares = user?.shares ?? 100;
 
   return (
 
@@ -107,24 +107,25 @@ const ShareCertificate: React.FC = () => {
           <p>
             Tên cổ đông :
             <span className="text-red-600 font-bold ml-2">
-              {user?.name ?? "TRẦN THỊ DUY LY"}
+              {user?.name ?? "Bùi Văn Trường"}
             </span>
           </p>
 
-          <p>Ngày sinh : 26/02/1977</p>
+          <p>Ngày sinh : 05/06/1963</p>
 
-          <p>CCCD số : 068177004304</p>
+          <p>CCCD số : 035063000647</p>
 
-          <p>Ngày cấp : 25/01/2024</p>
+          <p>Ngày cấp : 20/02/2025</p>
 
           <p>
-            Hộ khẩu : 1011/1 Trần Phú, Phường BLao,
-            Thành phố Bảo Lộc, Tỉnh Lâm Đồng
+            Hộ khẩu : P322 Dãy 35B Tt HVQY Tổ Dân Phố 8,
+            Phúc La, Hà Đông, Hà Nội
+
           </p>
 
           <p>
-            Địa chỉ : 1011/1 Trần Phú, Phường BLao,
-            Thành phố Bảo Lộc, Tỉnh Lâm Đồng
+            Địa chỉ : P322 Dãy 35B Tt HVQY Tổ Dân Phố 8,
+            Phúc La, Hà Đông, Hà Nội
           </p>
 
         </div>
@@ -132,7 +133,7 @@ const ShareCertificate: React.FC = () => {
 
         <div className="space-y-2">
 
-          <p>Giới tính : Nữ</p>
+          <p>Giới tính : Nam</p>
 
           <p>Quốc tịch : Việt Nam</p>
 
@@ -160,21 +161,21 @@ const ShareCertificate: React.FC = () => {
         <p>
           Mệnh giá :
           <span className="text-blue-700 font-semibold ml-1">
-            10 000
+            100.000
           </span> đồng/cổ phần
         </p>
 
         <p>
           Tổng giá trị theo mệnh giá :
           <span className="text-blue-700 font-semibold ml-1">
-            {(shares * 10000).toLocaleString()}
+            {(shares * 100000).toLocaleString('vi-VN')}
           </span> đồng
         </p>
 
         <p>
           (Bằng chữ:
           <span className="italic text-blue-700 ml-1">
-            mười triệu
+            mười triệu việt nam đồng
           </span>)
         </p>
 
@@ -182,14 +183,14 @@ const ShareCertificate: React.FC = () => {
 
         <p>
           + Số lượng cổ phần được tự do chuyển nhượng :
-          ................ cổ phần
+          .......... cổ phần
         </p>
 
         <p>
           + Số lượng cổ phần hạn chế chuyển nhượng :
           <span className="text-blue-700 ml-1">
-            {shares.toLocaleString()}
-          </span> cổ phần
+            100.000
+          </span> đồng
         </p>
 
         <p className="italic text-center">
@@ -198,9 +199,9 @@ const ShareCertificate: React.FC = () => {
 
         <p>
           Ghi sổ đăng ký cổ đông ngày :
-          <span className="text-blue-700 ml-1">08/10/2024</span>
+          <span className="text-blue-700 ml-1">01/04/2026</span>
           {" "}Số :
-          <span className="text-blue-700 ml-1">EX12652</span>
+          <span className="text-blue-700 ml-1">EX00001</span>
         </p>
 
         <p>
@@ -212,7 +213,7 @@ const ShareCertificate: React.FC = () => {
 
       {/* SIGNATURE */}
 
-      <div className="flex justify-end mt-10">
+      <div className="flex justify-end mt-5">
 
         <div className="text-center relative">
 
@@ -222,19 +223,11 @@ const ShareCertificate: React.FC = () => {
 
           <p>Giám Đốc</p>
 
-          {/* <img
-            src="/stamp.png"
-            className="absolute left-[-40px] top-[10px] w-[130px]"
-          /> */}
-
           <img
-            src="https://i.ibb.co/8LMg0g2D/image-2026-03-26-160455066.png"
-            className="absolute left-[40px] top-[50px] w-[120px]"
+            src="https://i.ibb.co/BH90t81j/Hlg.jpg"
+            className="absolute left-[40px] top-[50px] w-[160px]"
           />
 
-          <p className="mt-20 font-semibold">
-            LÝ THỊ VÂN
-          </p>
 
         </div>
 
@@ -243,7 +236,7 @@ const ShareCertificate: React.FC = () => {
 
       {/* FOOTER */}
 
-      <div className="border-t border-dotted mt-12 pt-4 text-[13px] text-gray-600">
+      <div className="border-t border-dotted mt-24 pt-4 text-[13px] text-gray-600">
 
         <p>
           Lưu ý: Giấy chứng nhận này có giá trị xác nhận và theo dõi cổ đông.
@@ -251,7 +244,7 @@ const ShareCertificate: React.FC = () => {
 
         <p>
           Giữ gìn giấy chứng nhận cẩn thận, không làm rách, nhầu nát, hư hỏng.
-        </p>
+        </p>-
 
       </div>
 

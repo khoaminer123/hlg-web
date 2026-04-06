@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm">
               <li><a href="#" className="hover:text-white transition-colors">Mô hình HLG</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Đời sống HLG</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Siêu thị Bibiduo</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Siêu thị HLG</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Liên minh doanh nghiệp</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Trung tâm dịch vụ</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Dịch vụ khác</a></li>
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-700 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-gray-500">
-          <p>Bản quyền thuộc về Công ty TNHH Công nghệ HLG | MST: 2500733665</p>
+          <p>Bản quyền thuộc về Công ty Cổ phần Công nghệ HLG | MST: 2500733665</p>
         </div>
       </div>
 

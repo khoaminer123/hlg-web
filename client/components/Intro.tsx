@@ -19,21 +19,27 @@ const Intro: React.FC = () => {
                 Khám phá HLG
               </h2>
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 leading-tight">
-                Công ty công nghệ cam kết số hóa và trao quyền cho nền kinh tế
-                thực thể
+                Công ty công nghệ cam kết số hóa và trao quyền cho nền kinh tế 
+
               </h3>
             </div>
 
             <div className="space-y-4 text-gray-400 leading-relaxed text-sm md:text-base">
               <p>
-                HLG tận dụng cơ chế tích điểm để giải quyết các nhu cầu thiết
-                yếu của các doanh nghiệp thực thể như: tăng trưởng khách hàng,
-                so sánh giá và đa dạng hóa kịch bản kinh doanh.
+                HLG kết nối các ngành nghề, các thương gia và doanh nghiệp cùng nhau xây dựng
+                một hệ sinh thái mở, phát triển phối hợp đa lĩnh vực đặt được sự đồng hành
+                cùng tiến và tăng trưởng bền vững. 
               </p>
               <p>
-                Chúng tôi cam kết xây dựng một hệ sinh thái hài hòa, nơi "Mọi
-                người tiêu dùng, Mọi người chia sẻ, Mọi người cùng giàu và Mọi
-                người cùng làm việc thiện".
+                HLG là nền tảng thương mại số toàn diện, nơi mỗi giao dịch mỗi khoản 
+                chi tiêu đều mang lại giá trị kép. Vừa thoải mãn nhu cầu thuyết yêu
+                của người tiêu dùng với mức giá cạnh tranh vừa gia tăng khách hàng cho 
+                doanh nghiệp.  
+              </p>
+              <p>
+                Thông qua hệ thống tích điểm xanh thông minh, HLG hỗ trợ các doanh nghiệp 
+                truyền thống nâng cấp toàn diện thành mô hình kinh doanh hiện đại, minh bạch 
+                và hiệu quả đáp ứng đầy đủ nhu cầu của thị trường đang không ngừng thay đổi.              
               </p>
             </div>
 

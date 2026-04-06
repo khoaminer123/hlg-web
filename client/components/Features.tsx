@@ -14,14 +14,14 @@ const Features: React.FC = () => {
     {
       title: "Nền tảng tiêu dùng tích hợp liên minh liên ngành",
       description:
-        'Nền tảng "HLG liên kết tất cả các ngành nghề truyền thống, các doanh nghiệp, các cửa hàng kinh doanh. Nơi mọi người có thể sử dụng tìm kiếm khách hàng chéo của nhau. Chúng tôi tạo ra một liên minh liên ngành giúp doanh nghiệp tăng khách hàng, đồng thời giữu chân khách hàng quen ở lại với doanh nghiệp."',
+        'Nền tảng "HLG liên kết tất cả các ngành nghề truyền thống, các doanh nghiệp, các cửa hàng kinh doanh. Nơi mọi người có thể sử dụng tìm kiếm khách hàng chéo của nhau. Chúng tôi tạo ra một liên minh liên ngành giúp doanh nghiệp tăng khách hàng, đồng thời giữ chân khách hàng quen ở lại với doanh nghiệp."',
       tags: [
-        "Triệu SKU",
+        "Liên Minh HLG",
         "Trợ giá chính xác",
         "Dịch vụ một trạm",
         "Hợp tác thương hiệu",
         "Thanh toán di động",
-        "Giao đồ ăn nhanh",
+        "Kết nối ngành nghề",
       ],
       image:
         "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop", // Mockup placeholder
