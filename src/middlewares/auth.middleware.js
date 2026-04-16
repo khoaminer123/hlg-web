@@ -7,9 +7,10 @@ const authMiddleware = (req, res, next) => {
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.userId = decoded.id;
+    req.userRole = decoded.role;
     next();
   } catch {
-    res.status(401).json({ message: 'Invalid token' });
+    res.status(401).json({ message: 'Token không hợp lệ hoặc đã hết hạn' });
   }
 };
 

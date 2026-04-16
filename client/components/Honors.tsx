@@ -16,7 +16,7 @@ const Honors: React.FC = () => {
     },
     {
       title: "Doanh nghiệp kết hợp thương mại điện tử cùng liên minh ngành nghề",
-      description: "THLG là đơn vị tiên phong tại Việt Nam trong việc kết nối các ngành nghề trên một nền tảng cùng sự kết hợp giữa thương mại điện tử và liên minh ngành nghề."
+      description: "HLG là đơn vị tiên phong tại Việt Nam trong việc kết nối các ngành nghề trên một nền tảng cùng sự kết hợp giữa thương mại điện tử và liên minh ngành nghề."
     },
     {
       title: "Top Doanh nghiệp Hài lòng Khách hàng",

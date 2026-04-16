@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {/* Hotline Card */}
             <div className="bg-white rounded-[2.5rem] p-10 shadow-xl shadow-gray-100/50 border border-gray-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
-              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-pink-50 transition-colors">
+              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-indigo-50 transition-colors">
                 <i className="fas fa-phone-volume text-[#142077] text-4xl"></i>
               </div>
               <h3 className="text-xl font-black text-gray-800 mb-4">Hotline dịch vụ toàn quốc</h3>
@@ -50,22 +50,22 @@ const Contact: React.FC = () => {
 
             {/* Business Cooperation Card */}
             <div className="bg-white rounded-[2.5rem] p-10 shadow-xl shadow-gray-100/50 border border-gray-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
-              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-pink-50 transition-colors">
+              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-indigo-50 transition-colors">
                 <i className="fas fa-user-tie text-[#142077] text-4xl"></i>
               </div>
               <h3 className="text-xl font-black text-gray-800 mb-10">Hợp tác kinh doanh</h3>
-              <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-10 py-4 rounded-full font-bold text-sm shadow-lg shadow-pink-100 hover:scale-105 transition-all flex items-center gap-2">
+              <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-10 py-4 rounded-full font-bold text-sm shadow-lg shadow-indigo-100 hover:scale-105 transition-all flex items-center gap-2">
                 Liên hệ ngay <i className="fas fa-arrow-right text-[10px]"></i>
               </button>
             </div>
 
             {/* Feedback Card */}
             <div className="bg-white rounded-[2.5rem] p-10 shadow-xl shadow-gray-100/50 border border-gray-100 flex flex-col items-center text-center group hover:-translate-y-2 transition-all duration-300">
-              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-pink-50 transition-colors">
+              <div className="w-20 h-20 bg-gray-50 rounded-3xl flex items-center justify-center mb-8 group-hover:bg-indigo-50 transition-colors">
                 <i className="fas fa-comment-dots text-[#142077] text-4xl"></i>
               </div>
               <h3 className="text-xl font-black text-gray-800 mb-10">Để lại lời nhắn</h3>
-              <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-10 py-4 rounded-full font-bold text-sm shadow-lg shadow-pink-100 hover:scale-105 transition-all flex items-center gap-2">
+              <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-10 py-4 rounded-full font-bold text-sm shadow-lg shadow-indigo-100 hover:scale-105 transition-all flex items-center gap-2">
                 Nhắn tin trực tuyến <i className="fas fa-arrow-right text-[10px]"></i>
               </button>
             </div>

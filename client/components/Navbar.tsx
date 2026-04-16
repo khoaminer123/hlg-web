@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
   const menuItems = [
     { label: 'Trang chủ', path: '/' },
     { label: 'Mô hình HLG', path: '/model' },
-    { 
-      label: 'Đối tác', 
+    {
+      label: 'Đối tác',
       path: '/center',
       dropdown: {
         title: 'Đối tác',
@@ -39,8 +39,8 @@ const Navbar: React.FC = () => {
         ]
       }
     },
-    { 
-      label: 'Thông tin', 
+    {
+      label: 'Thông tin',
       path: '/info',
       dropdown: {
         title: 'Thông tin',
@@ -52,8 +52,8 @@ const Navbar: React.FC = () => {
         ]
       }
     },
-    { 
-      label: 'Tìm hiểu', 
+    {
+      label: 'Tìm hiểu',
       path: '/about',
       dropdown: {
         title: 'Tìm hiểu',
@@ -69,10 +69,12 @@ const Navbar: React.FC = () => {
     { label: 'Liên hệ', path: '/contact' },
     { label: 'Cửa hàng', path: '/mall' },
     {
-  label: 'Cổ phần',
-  path: '/shareholder'
-}
+      label: 'Cổ phần',
+      path: '/shareholder'
+    }
   ];
+
+  const { user, isAuthenticated, logout } = useAuth();
 
   const isActive = (path: string) => {
     if (path === '/' && location.pathname !== '/') return false;
@@ -81,21 +83,20 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav 
-        className={`fixed w-full z-[100] transition-all duration-500 ease-in-out ${
-          isScrolled 
-            ? 'bg-[#142077] shadow-lg py-2' 
+      <nav
+        className={`fixed w-full z-[100] transition-all duration-500 ease-in-out ${isScrolled
+            ? 'bg-[#142077] shadow-lg py-2'
             : 'bg-[#142077]/60 backdrop-blur-md py-4'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             {/* Logo Section */}
             <div className="flex-shrink-0 flex items-center">
               <Link to="/" className="flex items-center group">
-                <img 
-                  src="https://i.postimg.cc/CK5nDccF/xoa-phong-va-202603181733-Photoroom.png" 
-                  alt="HLG Logo" 
+                <img
+                  src="https://i.postimg.cc/CK5nDccF/xoa-phong-va-202603181733-Photoroom.png"
+                  alt="HLG Logo"
                   className="h-10 md:h-12 w-auto "
                   onError={(e) => {
                     e.currentTarget.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HLG";
@@ -106,16 +107,15 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Desktop Menu */}
-            <div className="hidden xl:flex items-center space-x-1">
+            <div className="hidden lg:flex items-center space-x-1">
               {menuItems.map((item) => (
                 <div key={item.label} className="relative group px-1">
                   <Link
                     to={item.path}
-                    className={`px-3 py-1 text-[12px] font-bold uppercase tracking-wider transition-all duration-300 rounded-lg flex items-center gap-1.5 ${
-                      isActive(item.path)
+                    className={`px-3 py-1 text-[12px] font-bold uppercase tracking-wider transition-all duration-300 rounded-lg flex items-center gap-1.5 ${isActive(item.path)
                         ? 'text-white bg-white/20'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
-                    }`}
+                      }`}
                   >
                     {item.label}
                     {item.dropdown && (
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
                     )}
                   </Link>
 
-                  {/* Dropdown Menu - UPDATED COLORS */}
+                  {/* Dropdown Menu */}
                   {item.dropdown && (
                     <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0 z-[110]">
                       <div className="bg-[#f0f2ff] rounded-2xl p-5 shadow-2xl border border-[#142077]/10 min-w-[240px]">
@@ -134,14 +134,13 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className="flex flex-col space-y-1">
                           {item.dropdown.items.map((sub, idx) => (
-                            <Link 
-                              key={idx} 
-                              to={sub.path} 
-                              className={`px-3 py-2.5 rounded-xl font-bold text-[14px] transition-all duration-200 ${
-                                location.pathname === sub.path
-                                ? 'bg-[#142077] text-white'
-                                : 'text-[#142077]/80 hover:text-[#142077] hover:bg-[#142077]/10'
-                              }`}
+                            <Link
+                              key={idx}
+                              to={sub.path}
+                              className={`px-3 py-2.5 rounded-xl font-bold text-[14px] transition-all duration-200 ${location.pathname === sub.path
+                                  ? 'bg-[#142077] text-white'
+                                  : 'text-[#142077]/80 hover:text-[#142077] hover:bg-[#142077]/10'
+                                }`}
                             >
                               {sub.label}
                             </Link>
@@ -156,13 +155,13 @@ const Navbar: React.FC = () => {
 
             {/* Right Actions Section (Desktop) */}
             <div className="hidden lg:flex items-center space-x-5">
-              <button 
+              <button
                 onClick={() => navigate('/search')}
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 text-white/80 hover:text-white hover:bg-white/10"
               >
                 <i className="fas fa-search text-lg"></i>
               </button>
-              
+
               <div className="h-5 w-[1.5px] bg-white/20"></div>
 
               {/* Support Button */}
@@ -172,9 +171,9 @@ const Navbar: React.FC = () => {
                   <div className="text-center space-y-4">
                     <p className="text-white text-xs font-bold tracking-wider opacity-90 uppercase">Dịch vụ trực tuyến</p>
                     <div className="bg-white p-2 rounded-2xl inline-block mx-auto">
-                      <img 
-                        src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hlg.vn/support&color=142077`} 
-                        alt="QR Code Support" 
+                      <img
+                        src={`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://hlg.vn/support&color=142077`}
+                        alt="QR Code Support"
                         className="w-32 h-32"
                       />
                     </div>
@@ -186,29 +185,30 @@ const Navbar: React.FC = () => {
                   <div className="absolute -top-2 right-6 w-4 h-4 bg-[#142077] rotate-45 border-l-[3px] border-t-[3px] border-white/5"></div>
                 </div>
 
-                <button 
-                  className={`px-6 h-10 rounded-full font-black text-[12px] uppercase tracking-wider transition-all duration-300 flex items-center gap-2 border leading-none ${
-                    isScrolled 
-                      ? 'bg-white text-[#142077] border-white hover:bg-[#f0f2ff]' 
+                <button
+                  className={`px-6 h-10 rounded-full font-black text-[12px] uppercase tracking-wider transition-all duration-300 flex items-center gap-2 border leading-none ${isScrolled
+                      ? 'bg-white text-[#142077] border-white hover:bg-[#f0f2ff]'
                       : 'bg-white/10 text-white border-white/20 hover:bg-white/20'
-                  }`}
+                    }`}
                 >
                   <i className="fas fa-headset text-base"></i>
                   HỖ TRỢ
                 </button>
               </div>
+
+              
             </div>
 
             {/* Mobile Actions Section */}
-            <div className="xl:hidden flex items-center space-x-2">
-              <button 
+            <div className="lg:hidden flex items-center space-x-2">
+              <button
                 onClick={() => navigate('/search')}
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-colors text-white/80 hover:bg-white/10"
               >
                 <i className="fas fa-search"></i>
               </button>
-              <button 
-                onClick={() => setIsOpen(true)} 
+              <button
+                onClick={() => setIsOpen(true)}
                 className="w-10 h-10 flex items-center justify-center transition-colors rounded-xl text-white hover:bg-white/10"
               >
                 <i className="fas fa-bars text-xl"></i>
@@ -219,11 +219,11 @@ const Navbar: React.FC = () => {
       </nav>
 
       {/* MOBILE SIDEBAR */}
-      <div className={`fixed inset-0 z-[200] xl:hidden transition-all duration-300 ${isOpen ? 'visible' : 'invisible'}`}>
+      <div className={`fixed inset-0 z-[200] lg:hidden transition-all duration-300 ${isOpen ? 'visible' : 'invisible'}`}>
         <div className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => setIsOpen(false)}></div>
         <div className={`absolute right-0 top-0 h-full w-[80%] max-w-[320px] bg-white shadow-2xl transition-transform duration-300 ease-out transform flex flex-col ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
           <div className="p-6 flex items-center justify-between border-b border-gray-50">
-            <img src="https://i.postimg.cc/HnVwwFmX/Screenshot-2026-02-01-222735.png" alt="HLG Logo" className="h-8 w-auto"  />
+            <img src="https://i.postimg.cc/HnVwwFmX/Screenshot-2026-02-01-222735.png" alt="HLG Logo" className="h-8 w-auto" />
             <button onClick={() => setIsOpen(false)} className="w-10 h-10 flex items-center justify-center text-gray-400 hover:text-[#142077] hover:bg-[#f0f2ff] rounded-full transition-all">
               <i className="fas fa-times text-xl"></i>
             </button>

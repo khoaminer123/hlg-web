@@ -42,9 +42,9 @@ const News: React.FC = () => {
     },
     {
       id: 5,
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+      image: "https://i.ibb.co/KjH8WNZw/HLG1.jpg",
       title: "Liên minh khởi hành, chung tay kiến tạo: HLG Tech đồng hành cùng các doanh nghiệp vừa và nhỏ",
-      date: "22 tháng 10 năm 2024",
+      date: "22 tháng 10 năm 2025",
       summary: "Chuỗi hội thảo hỗ trợ doanh nghiệp SME chuyển đổi số đã được HLG triển khai rộng khắp các tỉnh thành, mang lại giải pháp tối ưu cho hàng vạn cửa hàng truyền thống trong kỷ nguyên kinh tế số.",
       category: 2
     },
@@ -58,10 +58,10 @@ const News: React.FC = () => {
     },
     {
       id: 7,
-      image: "https://images.unsplash.com/photo-1560523182-774a33983067?q=80&w=2070&auto=format&fit=crop",
-      title: "Mở rộng hệ sinh thái: Ra mắt tính năng 'Chợ dân sinh' trên Mini App HLG Life",
-      date: "02 tháng 10 năm 2024",
-      summary: "Tính năng mới cho phép người dùng đặt mua thực phẩm tươi sống trực tiếp từ các chợ đầu mối liên kết với HLG, đảm bảo chất lượng tươi ngon và giá cả cạnh tranh nhất thị trường.",
+      image: "https://i.ibb.co/wr613rj8/HLG2.jpg",
+      title: "Mở rộng hệ sinh thái: Ra mắt tính năng mua sắm online trên nền tảng HLG ",
+      date: "15 tháng 07 năm 2025",
+      summary: "Tính năng mới cho phép người dùng đặt mua mọi mặt hàng online trên nền tảng app HLG.",
       category: 2
     },
     {
@@ -106,7 +106,7 @@ const News: React.FC = () => {
                 >
                   {cat}
                   {activeTab === idx && (
-                    <div className="absolute bottom-[-10px] left-0 right-0 h-[3px] bg-[#142077] rounded-full shadow-lg shadow-pink-200"></div>
+                    <div className="absolute bottom-[-10px] left-0 right-0 h-[3px] bg-[#142077] rounded-full shadow-lg shadow-indigo-200"></div>
                   )}
                 </button>
               ))}
@@ -201,7 +201,7 @@ const News: React.FC = () => {
 
         {/* Bottom Button */}
         <div className="mt-12 text-center">
-          <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-12 py-3.5 rounded-full font-bold shadow-lg shadow-pink-100 hover:scale-105 transition-all flex items-center mx-auto">
+          <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-12 py-3.5 rounded-full font-bold shadow-lg shadow-indigo-200 hover:scale-105 transition-all flex items-center mx-auto">
             Xem thêm thông tin <i className="fas fa-arrow-right ml-3 text-sm"></i>
           </button>
         </div>

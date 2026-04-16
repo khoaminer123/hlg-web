@@ -19,7 +19,7 @@ const Intro: React.FC = () => {
                 Khám phá HLG
               </h2>
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 leading-tight">
-                Công ty công nghệ cam kết số hóa và trao quyền cho nền kinh tế 
+                Công ty công nghệ cam kết số hóa và trao quyền cho nền kinh tế
 
               </h3>
             </div>
@@ -28,18 +28,18 @@ const Intro: React.FC = () => {
               <p>
                 HLG kết nối các ngành nghề, các thương gia và doanh nghiệp cùng nhau xây dựng
                 một hệ sinh thái mở, phát triển phối hợp đa lĩnh vực đặt được sự đồng hành
-                cùng tiến và tăng trưởng bền vững. 
+                cùng tiến và tăng trưởng bền vững.
               </p>
               <p>
-                HLG là nền tảng thương mại số toàn diện, nơi mỗi giao dịch mỗi khoản 
+                HLG là nền tảng thương mại số toàn diện, nơi mỗi giao dịch mỗi khoản
                 chi tiêu đều mang lại giá trị kép. Vừa thoải mãn nhu cầu thuyết yêu
-                của người tiêu dùng với mức giá cạnh tranh vừa gia tăng khách hàng cho 
-                doanh nghiệp.  
+                của người tiêu dùng với mức giá cạnh tranh vừa gia tăng khách hàng cho
+                doanh nghiệp.
               </p>
               <p>
-                Thông qua hệ thống tích điểm xanh thông minh, HLG hỗ trợ các doanh nghiệp 
-                truyền thống nâng cấp toàn diện thành mô hình kinh doanh hiện đại, minh bạch 
-                và hiệu quả đáp ứng đầy đủ nhu cầu của thị trường đang không ngừng thay đổi.              
+                Thông qua hệ thống tích điểm xanh thông minh, HLG hỗ trợ các doanh nghiệp
+                truyền thống nâng cấp toàn diện thành mô hình kinh doanh hiện đại, minh bạch
+                và hiệu quả đáp ứng đầy đủ nhu cầu của thị trường đang không ngừng thay đổi.
               </p>
             </div>
 
@@ -82,11 +82,10 @@ const Intro: React.FC = () => {
           {stats.map((stat, idx) => (
             <div
               key={idx}
-              className={`flex flex-col items-center text-center px-2 py-6 group transition-all duration-300 ${
-                idx !== stats.length - 1 ? "lg:border-r border-gray-100" : ""
-              }`}
+              className={`flex flex-col items-center text-center px-2 py-6 group transition-all duration-300 ${idx !== stats.length - 1 ? "lg:border-r border-gray-100" : ""
+                }`}
             >
-              <div className="mb-4 text-gray-300 group-hover:text-pink-primary transition-colors duration-500">
+              <div className="mb-4 text-gray-300 group-hover:text-hlg-blue transition-colors duration-500">
                 <i
                   className={`fas ${stat.icon} text-4xl font-light opacity-50 group-hover:opacity-100`}
                 ></i>

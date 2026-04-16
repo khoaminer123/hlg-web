@@ -5,7 +5,7 @@ const Banner: React.FC = () => {
   return (
     <section className="relative py-20 overflow-hidden">
       {/* Background with blur and abstract shapes to mimic the image */}
-      <div className="absolute inset-0 bg-[#f8f0ff] -z-10"></div>
+      <div className="absolute inset-0 bg-[#f0f4ff] -z-10"></div>
       <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-full max-w-6xl h-64 flex justify-around opacity-40 blur-2xl">
         <div className="w-48 h-48 bg-[#117BF4] rounded-2xl transform rotate-12 mt-20"></div>
         <div className="w-48 h-48 bg-blue-200 rounded-2xl transform -rotate-12 mt-10"></div>

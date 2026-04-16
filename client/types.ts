@@ -2,7 +2,10 @@
 export interface User {
   id: string;
   username: string;
-  role: 'admin' | 'user';
+  email: string;
+  role: 'admin' | 'shareholder';
+  isFirstLogin: boolean;
+  fullName?: string;
 }
 
 export interface NewsItem {

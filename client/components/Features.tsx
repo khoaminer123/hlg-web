@@ -5,7 +5,7 @@ const Features: React.FC = () => {
 
   const tabs = [
     { title: "Đời sống HLG", id: 0 },
-    { title: "Siêu thị Bibiduo", id: 1 },
+    { title: "Siêu thị HLG", id: 1 },
     { title: "Liên minh doanh nghiệp", id: 2 },
     { title: "Trung tâm dịch vụ", id: 3 },
   ];
@@ -40,11 +40,10 @@ const Features: React.FC = () => {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 ${
-                activeTab === tab.id
+              className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 ${activeTab === tab.id
                   ? "bg-[#142077] text-white shadow-lg shadow-[#142077]"
-                  : "text-gray-800 hover:text-pink-primary"
-              }`}
+                  : "text-gray-800 hover:text-hlg-blue"
+                }`}
             >
               {tab.title}
             </button>
@@ -74,7 +73,7 @@ const Features: React.FC = () => {
               {currentContent.tags.map((tag, idx) => (
                 <div
                   key={idx}
-                  className="border border-gray-300 text-gray-500 text-sm py-2 px-4 rounded-md text-center hover:border-[#142077] hover:text-pink-primary transition-colors"
+                  className="border border-gray-300 text-gray-500 text-sm py-2 px-4 rounded-md text-center hover:border-[#142077] hover:text-hlg-blue transition-colors"
                 >
                   {tag}
                 </div>
@@ -92,7 +91,7 @@ const Features: React.FC = () => {
 
         {/* Bottom Button */}
         <div className="mt-16 text-center">
-          <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl shadow-pink-100 hover:scale-105 transition-all">
+          <button className="bg-gradient-to-r from-[#142077] to-[#117BF4] text-white px-12 py-4 rounded-full text-lg font-bold shadow-xl shadow-indigo-100 hover:scale-105 transition-all">
             Xem thêm dịch vụ <i className="fas fa-arrow-right ml-2"></i>
           </button>
         </div>
