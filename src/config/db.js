@@ -8,7 +8,7 @@ const connectDB = async () => {
     console.log('MongoDB connected');
 
     // 👉 Chỉ tạo admin nếu chưa tồn tại
-    const adminUsername = 'dinhvandong';
+    const adminUsername = 'adminHLG';
 
     const existingAdmin = await User.findOne({
       username: adminUsername
@@ -20,7 +20,7 @@ const connectDB = async () => {
       const adminUser = new User({
         username: adminUsername,
         cccd: adminUsername,
-        email: 'dinhvandong@gmail.com',
+        email: 'adminHLG@gmail.com',
         password: hashedPassword,
         fullName: 'System Admin',
         phone: '0000000000',
