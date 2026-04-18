@@ -6,7 +6,7 @@ const News: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const categories = ['Thông tin', 'Hoạt động', 'Tin tức'];
-  
+
   const newsItems = [
     {
       id: 1,
@@ -92,17 +92,16 @@ const News: React.FC = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-8">
             Thông tin <span className="text-[#142077]">HLG</span>
           </h2>
-          
+
           <div className="w-full flex flex-col md:flex-row justify-center items-center border-b border-gray-200 pb-2 relative">
             {/* Centered Tabs */}
             <div className="flex space-x-6 md:space-x-12">
               {categories.map((cat, idx) => (
-                <button 
-                  key={idx} 
+                <button
+                  key={idx}
                   onClick={() => setActiveTab(idx)}
-                  className={`text-lg font-bold pb-2 transition-all relative ${
-                    activeTab === idx ? 'text-[#142077]' : 'text-gray-500 hover:text-gray-700'
-                  }`}
+                  className={`text-lg font-bold pb-2 transition-all relative ${activeTab === idx ? 'text-[#142077]' : 'text-gray-500 hover:text-gray-700'
+                    }`}
                 >
                   {cat}
                   {activeTab === idx && (
@@ -114,13 +113,13 @@ const News: React.FC = () => {
 
             {/* Navigation Buttons */}
             <div className="md:absolute md:right-0 flex space-x-3 mt-4 md:mt-0 mb-2">
-              <button 
+              <button
                 onClick={() => scroll('left')}
                 className="w-10 h-10 rounded-full bg-gray-200/50 flex items-center justify-center text-gray-400 hover:bg-[#142077] hover:text-white hover:shadow-md transition-all"
               >
                 <i className="fas fa-chevron-left"></i>
               </button>
-              <button 
+              <button
                 onClick={() => scroll('right')}
                 className="w-10 h-10 rounded-full bg-gray-200/50 flex items-center justify-center text-gray-400 hover:bg-[#142077] hover:text-white hover:shadow-md transition-all"
               >
@@ -131,22 +130,22 @@ const News: React.FC = () => {
         </div>
 
         {/* News Slider Container */}
-        <div 
+        <div
           ref={scrollRef}
           className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory no-scrollbar"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {filteredNews.map((item) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="group min-w-[280px] md:min-w-[310px] max-w-[310px] bg-white rounded-2xl overflow-hidden shadow-sm transition-all flex flex-col snap-start border border-transparent relative h-[480px] cursor-pointer"
             >
               {/* Base Content (White background layer) */}
               <div className="h-full flex flex-col">
                 <div className="h-48 overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -162,7 +161,7 @@ const News: React.FC = () => {
                   </div>
                   <div className="pt-4 mt-auto">
                     <div className="text-[#142077] text-sm font-bold flex items-center">
-                      Tìm hiểu thêm 
+                      Tìm hiểu thêm
                       <div className="ml-2 w-6 h-6 rounded-full bg-[#142077] flex items-center justify-center text-white text-[10px]">
                         <i className="fas fa-chevron-right"></i>
                       </div>
@@ -183,7 +182,7 @@ const News: React.FC = () => {
                       {item.date}, {item.summary}
                     </p>
                   </div>
-                  
+
                   {/* Button anchored within the 480px content area */}
                   <div className="mt-auto">
                     <button className="bg-white rounded-full py-3 px-6 flex items-center justify-between w-[180px] shadow-xl hover:scale-105 transition-transform group/btn">
@@ -206,7 +205,7 @@ const News: React.FC = () => {
           </button>
         </div>
       </div>
-      
+
       <style>{`
         .no-scrollbar::-webkit-scrollbar {
           display: none;
