@@ -24,7 +24,7 @@ interface ShareCertificateProps {
 
 const ShareCertificate: React.FC<ShareCertificateProps> = ({ profile, faceValue: propFaceValue }) => {
   const shares = profile?.sharesCount ?? 0;
-  const faceValue = propFaceValue ?? 10000;
+  const faceValue = propFaceValue ?? 100000;
   const totalValue = shares * faceValue;
   const totalValueText = numberToVietnameseWords(totalValue);
 

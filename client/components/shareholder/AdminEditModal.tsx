@@ -40,13 +40,13 @@ const AdminEditModal: React.FC<AdminEditModalProps> = ({ isOpen, onClose, shareh
                 const img = new Image();
                 img.onload = () => {
                     const canvas = document.createElement("canvas");
-                    const MAX_WIDTH = 1000; // Tối ưu kích thước ảnh
+                    const MAX_WIDTH = 800; // Giảm thêm để vượt qua giới hạn 1MB của Nginx
                     const scale = MAX_WIDTH > img.width ? 1 : MAX_WIDTH / img.width;
                     canvas.width = img.width * scale;
                     canvas.height = img.height * scale;
                     const ctx = canvas.getContext("2d");
                     ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
-                    const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.7); // Giảm nhẹ chất lượng để tối ưu dung lượng
+                    const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.6); // Giảm chất lượng hơn nữa để đảm bảo dung lượng thấp
                     setForm((prev: any) => ({ ...prev, strategicCertImage: compressedDataUrl }));
                 };
                 img.src = event.target?.result as string;

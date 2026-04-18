@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { api } from '../utils/api';
 
-const DEFAULT_FACE_VALUE = 100000;
+const DEFAULT_FACE_VALUE = 10000;
 
 /**
  * Hook to manage shareholder profile and stock price
