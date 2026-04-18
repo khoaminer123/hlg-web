@@ -43,7 +43,7 @@ const ShareholderDashboard: React.FC = () => {
       });
       setIsEditing(false);
       setEditStatus({ success: true });
-      setTimeout(() => setEditStatus(null), 3000);
+      setTimeout(() => setEditStatus(null), 5000);
     } catch (err: any) {
       setEditStatus({ error: err.message });
     }
@@ -83,7 +83,6 @@ const ShareholderDashboard: React.FC = () => {
   const mainStats = [
     { label: 'Tổng số cổ phần', value: sharesCount.toLocaleString("vi-VN"), unit: 'CP', color: 'bg-white', text: 'text-hlg-blue' },
     { label: 'Giá trị ước tính', value: totalValue.toLocaleString("vi-VN"), unit: 'VNĐ', color: 'bg-hlg-blue', text: 'text-white' },
-    // { label: 'Tỷ lệ sở hữu', value: parseFloat(ownershipRatio.toFixed(4)).toString(), unit: '%', color: 'bg-white', text: 'text-emerald-600' }
   ];
 
   const tabs: { key: DashboardTab; label: string; icon: string }[] = [
@@ -159,8 +158,8 @@ const ShareholderDashboard: React.FC = () => {
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
             className={`px-8 py-3 rounded-xl font-semibold text-[11px] uppercase tracking-[0.15em] transition-all duration-300 flex items-center gap-2.5 ${activeTab === tab.key
-                ? 'bg-white text-hlg-blue shadow-md scale-[1.02]'
-                : 'text-slate-500 hover:text-hlg-blue hover:bg-white/60'
+              ? 'bg-white text-hlg-blue shadow-md scale-[1.02]'
+              : 'text-slate-500 hover:text-hlg-blue hover:bg-white/60'
               }`}
           >
             <i className={`fas ${tab.icon} text-[10px]`}></i>
@@ -200,8 +199,8 @@ const ShareholderDashboard: React.FC = () => {
                 key={sub.key}
                 onClick={() => setCertSubTab(sub.key)}
                 className={`group relative p-5 rounded-2xl border-2 text-left transition-all duration-300 flex items-center gap-4 ${certSubTab === sub.key
-                    ? 'border-hlg-blue bg-hlg-blue text-white shadow-lg shadow-blue-200 scale-[1.01]'
-                    : 'border-slate-200 bg-white text-slate-700 hover:border-hlg-blue/40 hover:bg-blue-50/30'
+                  ? 'border-hlg-blue bg-hlg-blue text-white shadow-lg shadow-blue-200 scale-[1.01]'
+                  : 'border-slate-200 bg-white text-slate-700 hover:border-hlg-blue/40 hover:bg-blue-50/30'
                   }`}
               >
                 <div

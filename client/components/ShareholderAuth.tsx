@@ -129,7 +129,7 @@ const ShareholderAuth: React.FC = () => {
   };
 
   const handleToggleStatus = async (sh: any) => {
-    const action = sh.status === 'active' ? 'khóa' : 'mở khóa';
+    const action = sh.status === 'active' ? 'Khóa' : 'Mở khóa';
     if (!window.confirm(`Bạn có chắc chắn muốn ${action} tài khoản "${sh.fullName}"?`)) return;
     setLoading(true);
     try {
@@ -180,7 +180,7 @@ const ShareholderAuth: React.FC = () => {
     setMessage({ type: 'success', text: 'Xuất file Excel thành công!' });
     setTimeout(() => {
       setMessage(null);
-    }, 3000);
+    }, 5000);
   };
 
   useEffect(() => {
@@ -363,7 +363,7 @@ const ShareholderAuth: React.FC = () => {
 
       setTimeout(() => {
         window.location.href = '/dashboard'; // Force reload to update context or use context update
-      }, 2000);
+      }, 5000);
 
     } catch (err: any) {
       setMessage({ type: 'error', text: err.message });
@@ -393,7 +393,7 @@ const ShareholderAuth: React.FC = () => {
           </div>
         )}
 
-        <div className={isLogin ? "flex flex-col md:flex-row w-full min-h-[400px]" : "p-8 relative"}>
+        <div className={isLogin ? "flex flex-col md:flex-row w-full min-h-[400px]" : "p-15 relative w-full max-w-8xl mx-auto"}>
           {!isLogin && (
             <button
               onClick={() => logout()}
@@ -696,13 +696,13 @@ const ShareholderAuth: React.FC = () => {
                     className="py-2.5 px-4 bg-white border border-slate-200 rounded-xl text-[11px] font-semibold text-slate-700 outline-none focus:border-blue-500 shadow-sm"
                   >
                     <option value="">Tất cả hành động</option>
-                    <option value="CREATE_SHAREHOLDER">Tạo cổ đông</option>
-                    <option value="UPDATE_SHAREHOLDER">Sửa cổ đông</option>
-                    <option value="RESET_PASSWORD">Reset mật khẩu</option>
-                    <option value="LOCK_ACCOUNT">Khóa tài khoản</option>
-                    <option value="UNLOCK_ACCOUNT">Mở khóa tài khoản</option>
-                    <option value="CHANGE_PASSWORD_SELF">Cổ đông đổi mật khẩu</option>
-                    <option value="CHANGE_PASSWORD_FIRST_LOGIN">Đổi mật khẩu lần đầu</option>
+                    <option value="Tạo cổ đông">Tạo cổ đông</option>
+                    <option value="Sửa Cổ Đông">Sửa cổ đông</option>
+                    <option value="Đặt lại mật khẩu">Reset mật khẩu</option>
+                    <option value="Khóa tài khoản">Khóa tài khoản</option>
+                    <option value="Mở khóa">Mở khóa tài khoản</option>
+                    <option value="Cổ đông đổi mật khẩu">Cổ đông đổi mật khẩu</option>
+                    <option value="Đổi mật khẩu lần đầu">Đổi mật khẩu lần đầu</option>
                   </select>
                   <input
                     type="date"
@@ -752,10 +752,10 @@ const ShareholderAuth: React.FC = () => {
                           </td>
                           <td className="px-6 py-4">
                             <span className={`px-3 py-1.5 rounded-xl text-[9px] font-black tracking-widest uppercase border ${log.action === 'CREATE_SHAREHOLDER' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' :
-                              log.action === 'RESET_PASSWORD' || log.action === 'CHANGE_PASSWORD_FIRST_LOGIN' || log.action === 'CHANGE_PASSWORD_SELF' ? 'bg-amber-50 text-amber-600 border-amber-100' :
-                                log.action === 'LOCK_ACCOUNT' ? 'bg-rose-50 text-rose-600 border-rose-100' :
-                                  log.action === 'UNLOCK_ACCOUNT' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' :
-                                    log.action === 'UPDATE_SHAREHOLDER' ? 'bg-blue-50 text-blue-600 border-blue-100' :
+                              log.action === 'Làm mới mật khẩu' || log.action === 'CHANGE_PASSWORD_FIRST_LOGIN' || log.action === 'CHANGE_PASSWORD_SELF' ? 'bg-amber-50 text-amber-600 border-amber-100' :
+                                log.action === 'Khóa tài khoản' ? 'bg-rose-50 text-rose-600 border-rose-100' :
+                                  log.action === 'Mở khóa tài khoản' ? 'bg-emerald-50 text-emerald-600 border-emerald-100' :
+                                    log.action === 'Cập nhật thông tin cổ đông' ? 'bg-blue-50 text-blue-600 border-blue-100' :
                                       'bg-slate-50 text-slate-600 border-slate-100'
                               }`}>{log.action}</span>
                           </td>

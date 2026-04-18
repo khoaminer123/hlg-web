@@ -33,7 +33,7 @@ const ChangePasswordModal: React.FC<ChangePasswordModalProps> = ({ isOpen, onClo
             if (!res.ok) throw new Error(data.message || 'Lỗi đổi mật khẩu');
             setMessage({ type: 'success', text: 'Đổi mật khẩu thành công!' });
             setForm({ currentPassword: '', newPassword: '', confirmPassword: '' });
-            setTimeout(() => onClose(), 1500);
+            setTimeout(() => onClose(), 5000);
         } catch (err: any) {
             setMessage({ type: 'error', text: err.message });
         } finally {

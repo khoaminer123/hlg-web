@@ -10,7 +10,7 @@ class SystemConfigService {
 
         // Default values if not set
         if (!config && key === 'stockPrice') {
-            return { key: 'stockPrice', value: 100000 };
+            return { key: 'stockPrice', value: 10000 };
         }
 
         if (!config) {

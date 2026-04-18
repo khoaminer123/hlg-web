@@ -40,13 +40,13 @@ const AdminEditModal: React.FC<AdminEditModalProps> = ({ isOpen, onClose, shareh
                 const img = new Image();
                 img.onload = () => {
                     const canvas = document.createElement("canvas");
-                    const MAX_WIDTH = 1200; // Mở rộng độ phân giải cho chứng nhận
+                    const MAX_WIDTH = 1000; // Tối ưu kích thước ảnh
                     const scale = MAX_WIDTH > img.width ? 1 : MAX_WIDTH / img.width;
                     canvas.width = img.width * scale;
                     canvas.height = img.height * scale;
                     const ctx = canvas.getContext("2d");
                     ctx?.drawImage(img, 0, 0, canvas.width, canvas.height);
-                    const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.85); // Nâng chất lượng ảnh
+                    const compressedDataUrl = canvas.toDataURL("image/jpeg", 0.7); // Giảm nhẹ chất lượng để tối ưu dung lượng
                     setForm((prev: any) => ({ ...prev, strategicCertImage: compressedDataUrl }));
                 };
                 img.src = event.target?.result as string;
@@ -88,7 +88,7 @@ const AdminEditModal: React.FC<AdminEditModalProps> = ({ isOpen, onClose, shareh
             if (!res.ok) throw new Error(data.message || 'Lỗi cập nhật');
             setMessage({ type: 'success', text: 'Cập nhật thành công!' });
             onSaved(data.user);
-            setTimeout(() => onClose(), 1200);
+            setTimeout(() => onClose(), 5000);
         } catch (err: any) {
             setMessage({ type: 'error', text: err.message });
         } finally {
@@ -98,7 +98,6 @@ const AdminEditModal: React.FC<AdminEditModalProps> = ({ isOpen, onClose, shareh
 
     if (!isOpen || !shareholder) return null;
 
-    // ── Portal: render thẳng vào document.body ────────────────────────────
     return createPortal(
         <div style={{ position: 'fixed', inset: 0, zIndex: 99999 }}>
 
@@ -114,7 +113,6 @@ const AdminEditModal: React.FC<AdminEditModalProps> = ({ isOpen, onClose, shareh
                 onClick={onClose}
             />
 
-            {/* MODAL BOX — căn giữa tuyệt đối */}
             <div style={{
                 position: 'absolute',
                 top: '50%',

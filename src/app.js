@@ -10,7 +10,8 @@ const errorMiddleware = require('./middlewares/error.middleware');
 const app = express();
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
@@ -21,7 +22,6 @@ const clientPath = path.join(__dirname, '../client/dist');
 /* 1️⃣ Serve static assets */
 app.use(express.static(clientPath));
 
-/* 2️⃣ SPA fallback bằng REGEX (Express 5 OK) */
 app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(clientPath, 'index.html'));
 });
