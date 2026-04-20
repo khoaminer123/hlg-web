@@ -126,9 +126,6 @@ class UserService {
         return updated;
     }
 
-    /**
-     * Cổ đông tự cập nhật thông tin liên lạc
-     */
     async updateMe(userId, profileData) {
         const { phone, hometown, residence, avatar } = profileData;
         const user = await User.findByIdAndUpdate(

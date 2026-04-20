@@ -3,9 +3,6 @@ import { api } from '../utils/api';
 
 const DEFAULT_FACE_VALUE = 10000;
 
-/**
- * Hook to manage shareholder profile and stock price
- */
 export const useShareholder = () => {
     const [profile, setProfile] = useState<any>(null);
     const [stockPrice, setStockPrice] = useState<number>(DEFAULT_FACE_VALUE);
