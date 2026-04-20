@@ -18,7 +18,7 @@ const News: React.FC = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop",
+      image: "https://i.ibb.co/Swc6sPDM/z7745240586567-49a9354714ff70e50b31143a8be6635a.jpg",
       title: "Tiếp nối mạch nguồn văn hóa, chung tay sưởi ấm trường học! HLG Tech đồng hành cùng giáo dục",
       date: "28 tháng 11 năm 2024",
       summary: "Vào ngày 28/11, nhân dịp kỷ niệm 10 năm thành lập trường tiểu học An Thành, một lễ hội văn hóa đặc sắc đã được tổ chức với sự tài trợ của HLG Tech nhằm khuyến khích tinh thần học tập của các em học sinh vùng khó khăn.",
@@ -34,7 +34,7 @@ const News: React.FC = () => {
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop",
+      image: "https://i.ibb.co/cc2zKVgx/z7745240741908-3b060a9b65b5f405da55363692a3ccf7.jpg",
       title: "HLG Tech được mời tham dự hoạt động của Hiệp hội Công thương thành phố Trương Gia Giới",
       date: "25 tháng 11 năm 2024",
       summary: "Sáng ngày 25/11, Phó Chủ tịch HLG Tech - ông Lương Vỹ đã dẫn đầu đoàn đại biểu tham gia buổi làm việc trực tiếp cùng lãnh đạo địa phương để thảo luận về các chính sách ưu đãi cho doanh nghiệp công nghệ.",
