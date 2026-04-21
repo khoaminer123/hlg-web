@@ -12,39 +12,37 @@ const News: React.FC = () => {
       id: 1,
       image: "https://i.ibb.co/hRb7zppk/image-2026-03-26-164535487.png",
       title: "Đời sống HLG",
-      date: "Tết Trung Thu",
+      // date: "Tết Trung Thu",
       summary: "Tết Trung Thu không chỉ là ngày trăng tròn, mà còn là biểu tượng của đoàn viên, yêu thương và chia sẻ. Với HLG mùa trăng không chỉ là dịp để gắn kết mà còn là cơ hội để thắp sáng tinh thần đồng hành phát triển thịnh vượng cùng nhau. Tại đây chúng tôi không chỉ làm việc cùng nhau mà còn chung tay xây dựng một cộng đồng liên minh ngành nghề bền vững giúp cho mọi người có nền tảng tài chính ổn định và tương lai thịnh vượng.",
       category: 0
     },
     {
       id: 2,
       image: "https://i.ibb.co/Swc6sPDM/z7745240586567-49a9354714ff70e50b31143a8be6635a.jpg",
-      title: "Tiếp nối mạch nguồn văn hóa, chung tay sưởi ấm trường học! HLG Tech đồng hành cùng giáo dục",
-      date: "28 tháng 11 năm 2024",
-      summary: "Vào ngày 28/11, nhân dịp kỷ niệm 10 năm thành lập trường tiểu học An Thành, một lễ hội văn hóa đặc sắc đã được tổ chức với sự tài trợ của HLG Tech nhằm khuyến khích tinh thần học tập của các em học sinh vùng khó khăn.",
+      title: "HLG 2.0 liên minh liên ngành hợp tác phát triến nâng tầm tương lai ",
+      // date: "28 tháng 10 năm 2025",
+      summary: "Ngày 28/10/2025, HLG chính thức góp mặt tại hội chợ mùa thu 2025 tại trung tâm triển lãm Việt Nam (VEC) sự kiện thương mại quy mô hàng đầu Việt Nam với hơn 3000 gian hàng quy tụ những thương hiệu tiêu trong nước và quốc tế. Đây là cột mốc đánh dấu hành trình HLG chính thức bước sang giai đoạn 2.0 liên minh liên ngành nơi hàng trăm doanh nghiệp Việt cùng nhau kiến tạo hệ sinh thái tiêu dùng kinh doanh tuần hoàn phát triển bền vững .",
       category: 1
     },
     {
       id: 3,
       image: "https://i.ibb.co/j9HVC9ff/image-2026-03-26-162943919.png",
       title: "HLG vinh dự tham dự hội nghị thượng đỉnh hợp tác hệ sinh thái toàn cầu tại Hà Nội",
-      date: "12 tháng 6 năm 2025",
       summary: 'Ngày 22/6/2025, CEO của HLG vinh dự tham dự buổi tọa đàm cấp quốc gia về chủ đề mang tính thời sự sâu sắc "Hộ Kinh doanh trước vấn nạn hàng giả và tuân thủ thuế". Đây là sự kiện đặc biệt quy tụ các chuyên gia hàng đầu đại diện các doanh nghiệp lớn các cơ quan ban ngành quản lý nhà nước nhằm tìm ra giải pháp cho hai vấn đề cấp thiết hiện nay.',
       category: 0
     },
     {
       id: 4,
       image: "https://i.ibb.co/cc2zKVgx/z7745240741908-3b060a9b65b5f405da55363692a3ccf7.jpg",
-      title: "HLG Tech được mời tham dự hoạt động của Hiệp hội Công thương thành phố Trương Gia Giới",
-      date: "25 tháng 11 năm 2024",
-      summary: "Sáng ngày 25/11, Phó Chủ tịch HLG Tech - ông Lương Vỹ đã dẫn đầu đoàn đại biểu tham gia buổi làm việc trực tiếp cùng lãnh đạo địa phương để thảo luận về các chính sách ưu đãi cho doanh nghiệp công nghệ.",
+      title: "CEO HLG tham ra buổi tọa đàm quốc gia 'hộ kinh doanh trước vấn nạn hàng giả và tuân thủ thuế'",
+      summary: "Sáng ngày 22/6 vừa qua CEO Tuấn Tú người đứng đầu công ty cổ phần công nghệ HLG Việt Nam đã vinh dự tham dự buổi tọa đàm cấp quốc gia về chủ đề mang tính thời sự sâu sắc 'Hộ kinh doanh trước vấn nạn hàng giả và tuân thủ thuế'. Đây là sự kiện đặc biệt quy tụ các chuyên gia hàng đầu đại diện các doanh nghiệp lớn và cơ quan quản lý nhà nước nhằm thảo luận tìm ra giải pháp cho hai vấn đề cấp thiết hiện nay   ",
       category: 1
     },
     {
       id: 5,
       image: "https://i.ibb.co/KjH8WNZw/HLG1.jpg",
       title: "Liên minh khởi hành, chung tay kiến tạo: HLG Tech đồng hành cùng các doanh nghiệp vừa và nhỏ",
-      date: "22 tháng 10 năm 2025",
+      // date: "22 tháng 10 năm 2025",
       summary: "Chuỗi hội thảo hỗ trợ doanh nghiệp SME chuyển đổi số đã được HLG triển khai rộng khắp các tỉnh thành, mang lại giải pháp tối ưu cho hàng vạn cửa hàng truyền thống trong kỷ nguyên kinh tế số.",
       category: 2
     },
@@ -52,7 +50,7 @@ const News: React.FC = () => {
       id: 6,
       image: "https://i.ibb.co/x86bdkRk/image-2026-03-26-163434966.png",
       title: "HLG vinh dự tham gia hội nghị thượng đỉnh hợp tác hệ sinh chuỗi cung ứng toàn cầu 2025",
-      date: "09 tháng 09 năm 2025",
+      // date: "09 tháng 09 năm 2025",
       summary: "Vào ngày 09/09/2025 vừa qua, HLG vinh dự được mời tham dự hội nghị thượng đỉnh hợp tác hệ sinh thái chuỗi cung ứng toàn cầu nằm 2025 do Yugeeks tổ chức tại Vin Palace. Đây là sự kiện quy tụ những doanh nghiệp hàng đầu các nhà sáng lập các chuyên gia quốc tế trong lĩnh vực chuỗi cung ứng với mục tiêu thúc đẩy hợp tác chia sẻ kiến thức và khám phá những cơ hội phát triển toàn cầu. Sự hiện diện của HLG khẳng định vị thế tiên phong trong hệ sinh thái kinh doanh mở ra cơ hội hợp tác chiến lược với các đối tác quốc tế. Chúng tôi tự hào khi được đống góp tầm nhìn và giải pháp của mình đồng thời học hỏi những kinh nghiệm quý giá từ các chuyên gia hàng đầu góp phần nâng cao giá trị cho đối tác và khách hàng.",
       category: 0
     },
@@ -60,7 +58,7 @@ const News: React.FC = () => {
       id: 7,
       image: "https://i.ibb.co/wr613rj8/HLG2.jpg",
       title: "Mở rộng hệ sinh thái: Ra mắt tính năng mua sắm online trên nền tảng HLG ",
-      date: "15 tháng 07 năm 2025",
+      // date: "15 tháng 07 năm 2025",
       summary: "Tính năng mới cho phép người dùng đặt mua mọi mặt hàng online trên nền tảng app HLG.",
       category: 2
     },
@@ -68,7 +66,7 @@ const News: React.FC = () => {
       id: 8,
       image: "https://i.ibb.co/LDQCKMJg/image-2026-02-02-145559117.png",
       title: "HLG đã tổ chức đại hội cổ đông lần 1 thành công tại trụ sở công ty",
-      date: "05 tháng 07 năm 2025",
+      // date: "05 tháng 07 năm 2025",
       summary: 'Đại hội cổ đông lần thứ 1 là cột mốc đầu tiên đánh dấu chiến lược phát triển của HLG Việt Nam, không chỉ tổng kết lại những bước đi đã qua mà là dấu ấn cho sự đồng hành quyết tâm của toàn thể ban lãnh đạo và cổ đông trong việc thực hiện hóa tầm nhìn xấy dựng nền tảng "Liên minh liên ngành bền vững mang giá trị cho doanh nghiệp, khách hàng và cả cộng đồng"',
       category: 0
     }
@@ -154,7 +152,7 @@ const News: React.FC = () => {
                     {item.title}
                   </h4>
                   <div className="space-y-2">
-                    <p className="text-gray-400 text-xs font-medium uppercase tracking-wider">{item.date}</p>
+                    {/* <p className="text-gray-400 text-xs font-medium uppercase tracking-wider">{item.date}</p> */}
                     <p className="text-gray-400 text-sm line-clamp-3 leading-relaxed">
                       {item.summary}
                     </p>
@@ -179,7 +177,6 @@ const News: React.FC = () => {
                       {item.title}
                     </h4>
                     <p className="text-white/90 text-sm md:text-base leading-relaxed line-clamp-[10]">
-                      {item.date}, {item.summary}
                     </p>
                   </div>
 

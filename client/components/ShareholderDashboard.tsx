@@ -100,7 +100,7 @@ const ShareholderDashboard: React.FC = () => {
       {/* HEADER */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
         <div>
-          <h1 className="text-3xl font-bold text-hlg-blue tracking-tight">Hồ sơ Cổ đông</h1>
+          <h1 className="text-3xl font-bold text-hlg-blue tracking-tight">Hồ sơ cổ đông</h1>
           <p className="text-slate-500 font-medium mt-1 text-xs tracking-wide">Trung tâm quản lý quyền sở hữu cổ phần HLG</p>
         </div>
         <div className="flex gap-3 flex-wrap">

@@ -510,7 +510,7 @@ const ShareholderAuth: React.FC = () => {
               {/* Header */}
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-2 mb-4 border-b border-slate-100 pb-4">
                 <div>
-                  <h3 className="text-xl font-black text-slate-900 tracking-tight">Cơ sở dữ liệu Cổ đông</h3>
+                  <h3 className="text-xl font-black text-slate-900 tracking-tight">Cơ sở dữ liệu cổ đông</h3>
                   <div className="flex items-center gap-2 mt-1">
                     <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
                     <p className="text-[10px] text-slate-500 font-medium uppercase tracking-[0.2em]">
@@ -953,7 +953,7 @@ const ShareholderAuth: React.FC = () => {
               {/* Header: Thu nhỏ cỡ chữ tiêu đề */}
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 mb-4 border-b border-slate-100 pb-3">
                 <div>
-                  <h2 className="text-xl font-black text-slate-900 tracking-tight">Khởi tạo Cổ đông</h2>
+                  <h2 className="text-xl font-black text-slate-900 tracking-tight">Khởi tạo cổ đông</h2>
                   <p className="text-slate-500 text-[11px] font-medium italic">Nhập dữ liệu định danh hệ thống</p>
                 </div>
                 <div className="px-3 py-1 bg-blue-50 border border-blue-100 rounded-lg text-blue-600 text-[9px] font-bold uppercase">
