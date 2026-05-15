@@ -2,10 +2,10 @@ import React from "react";
 
 const Intro: React.FC = () => {
   const stats = [
-    { value: "4000", label: "Thành viên", icon: "fa-users" },
-    { value: "1500", label: "Doanh nghiệp", icon: "fa-store-alt" },
-    { value: "6", label: "Trung tâm vận hành", icon: "fa-globe-asia" },
-    { value: "150", label: "Siêu thị hợp tác", icon: "fa-shopping-basket" },
+    { value: "4000", label: "Thành viên", icon: "fa-user-friends" },
+    { value: "1500", label: "Doanh nghiệp", icon: "fa-building" },
+    { value: "6", label: "Trung tâm vận hành", icon: "fa-cogs" },
+    { value: "150", label: "Siêu thị hợp tác", icon: "fa-shopping-cart" },
   ];
 
   return (
@@ -27,12 +27,12 @@ const Intro: React.FC = () => {
             <div className="space-y-4 text-gray-400 leading-relaxed text-sm md:text-base">
               <p>
                 HLG kết nối các ngành nghề, các thương gia và doanh nghiệp cùng nhau xây dựng
-                một hệ sinh thái mở, phát triển phối hợp đa lĩnh vực đặt được sự đồng hành
+                một hệ sinh thái mở, phát triển phối hợp đa lĩnh vực đạt được sự đồng hành
                 cùng tiến và tăng trưởng bền vững.
               </p>
               <p>
                 HLG là nền tảng thương mại số toàn diện, nơi mỗi giao dịch mỗi khoản
-                chi tiêu đều mang lại giá trị kép. Vừa thoải mãn nhu cầu thuyết yêu
+                chi tiêu đều mang lại giá trị kép. Vừa thỏa mãn nhu cầu thiết yếu
                 của người tiêu dùng với mức giá cạnh tranh vừa gia tăng khách hàng cho
                 doanh nghiệp.
               </p>
@@ -50,7 +50,15 @@ const Intro: React.FC = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative group overflow-hidden rounded-[1.5rem]">
+            {/* 1. Lớp phủ ngăn chặn tương tác chuột */}
+            <div
+              className="absolute inset-0 z-10"
+              style={{ cursor: 'default' }}
+              onClick={(e) => e.preventDefault()}
+            />
+
+            {/* 2. Video Youtube */}
             <div
               style={{
                 position: "relative",
@@ -60,25 +68,25 @@ const Intro: React.FC = () => {
               }}
             >
               <iframe
-                src="https://streamable.com/e/ppnegc?autoplay=1&nocontrols=1"
-                allow="fullscreen; autoplay"
-                allowFullScreen
+                src="https://www.youtube.com/embed/xWc1lKYr3x4?autoplay=1&mute=1&loop=1&playlist=xWc1lKYr3x4&controls=0&modestbranding=1&rel=0&iv_load_policy=3"
+                title="HLG Video"
+                allow="autoplay; fullscreen"
                 style={{
                   border: "none",
                   width: "100%",
-                  height: "100%",
+                  height: "110%", // Tăng chiều cao để đẩy viền YouTube ra ngoài
                   position: "absolute",
                   left: 0,
-                  top: 0,
-                  overflow: "hidden",
+                  top: "-5%",    // Đẩy nhẹ lên để giấu tiêu đề
+                  pointerEvents: "none", // Vô hiệu hóa tương tác trực tiếp trên iframe (tùy trình duyệt)
                 }}
               />
             </div>
           </div>
         </div>
 
-        {/* Stats Part - Integrated inside the same container */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 bg-gray-50/50 rounded-[2.5rem] p-4 md:p-8 border border-gray-100">
+        {/* Stats Part - Centered below */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 bg-gray-50/50 rounded-[2.5rem] p-4 md:p-8 border border-gray-100 max-w-5xl mx-auto">
           {stats.map((stat, idx) => (
             <div
               key={idx}
@@ -87,7 +95,7 @@ const Intro: React.FC = () => {
             >
               <div className="mb-4 text-gray-300 group-hover:text-hlg-blue transition-colors duration-500">
                 <i
-                  className={`fas ${stat.icon} text-4xl font-light opacity-50 group-hover:opacity-100`}
+                  className={`fas ${stat.icon} text-4xl opacity-50 group-hover:opacity-100`}
                 ></i>
               </div>
               <div className="space-y-1">

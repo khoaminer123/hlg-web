@@ -185,12 +185,12 @@ const ShareCertificate: React.FC<ShareCertificateProps> = ({ profile, faceValue:
 
       {/* SIGNATURE SECTION */}
       <div className="flex justify-end mt-5">
-        <div className="text-center relative">
+        <div className="text-center relative min-h-[200px] min-w-[250px]">
           <p className="font-semibold">TM. BAN LÃNH ĐẠO CÔNG TY</p>
-          <p>Giám Đốc</p>
+          <p className="font-semibold mt-1 mb-2">Giám Đốc</p>
           <img
             src="https://i.ibb.co/BH90t81j/Hlg.jpg"
-            className="absolute left-[40px] top-[20px] w-[160px]"
+            className="absolute left-1/2 -translate-x-1/2 top-[50px] w-[160px] mix-blend-multiply"
             alt="Chữ ký"
           />
         </div>

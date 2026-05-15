@@ -45,7 +45,7 @@ const Contact: React.FC = () => {
                 <i className="fas fa-phone-volume text-[#142077] text-4xl"></i>
               </div>
               <h3 className="text-xl font-black text-gray-800 mb-4">Hotline dịch vụ toàn quốc</h3>
-              <p className="text-2xl font-black text-[#142077] mb-2">400-889-1722</p>
+              <p className="text-2xl font-black text-[#142077] mb-2">0984 775 356</p>
             </div>
 
             {/* Business Cooperation Card */}

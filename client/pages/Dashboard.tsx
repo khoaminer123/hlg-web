@@ -63,7 +63,6 @@ const Dashboard: React.FC = () => {
 
        
       </aside>
-
       <main className="flex-1 flex flex-col overflow-hidden relative bg-slate-50/50">
         {/* Dynamic Background Elements */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-400/5 rounded-full blur-3xl pointer-events-none translate-x-1/2 -translate-y-1/2"></div>

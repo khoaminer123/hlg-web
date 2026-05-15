@@ -31,9 +31,9 @@ const Navbar: React.FC = () => {
       dropdown: {
         title: 'Đối tác',
         items: [
-          { label: 'Đời sống My Shop', path: '/center/life' },
-          { label: 'Siêu thị Binado', path: '/center/supermarket' },
-          { label: 'Liên minh ngành chéo', path: '/center/alliance' },
+          { label: 'Đời sống HLG', path: '/center/life' },
+          { label: 'Siêu thị HLG', path: '/center/supermarket' },
+          { label: 'Liên minh liên ngành', path: '/center/alliance' },
           { label: 'Trung tâm dịch vụ khu vực', path: '/center/service' },
           { label: 'Nghiệp vụ khác', path: '/center/other' },
         ]
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         title: 'Thông tin',
         items: [
           { label: 'Thông tin công ty', path: '/info/company' },
-          { label: 'Hoạt động My Shop', path: '/info/activities' },
+          { label: 'Hoạt động HLG', path: '/info/activities' },
           { label: 'Tin tức ngành', path: '/info/industry' },
           { label: 'Thông báo công ty', path: '/info/announcements' },
         ]
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
       dropdown: {
         title: 'Tìm hiểu',
         items: [
-          { label: 'Giới thiệu My Shop', path: '/about/intro' },
+          { label: 'Giới thiệu HLG', path: '/about/intro' },
           { label: 'Lịch sử phát triển', path: '/about/history' },
           { label: 'Diện mạo doanh nghiệp', path: '/about/profile' },
           { label: 'Khu vực sự kiện', path: '/about/events' },
@@ -67,7 +67,6 @@ const Navbar: React.FC = () => {
       }
     },
     { label: 'Liên hệ', path: '/contact' },
-    { label: 'Cửa hàng', path: '/mall' },
     {
       label: 'Cổ phần',
       path: '/shareholder'

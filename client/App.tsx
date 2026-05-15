@@ -11,7 +11,6 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import ModelHLG from './pages/ModelHLG';
 import Contact from './pages/Contact';
-import Mall from './pages/Mall';
 import Search from './pages/Search';
 import Shareholder from './pages/Shareholder';
 
@@ -25,7 +24,6 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/model" element={<ModelHLG />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/mall" element={<Mall />} />
             <Route path="/search" element={<Search />} />
             <Route path="/login" element={<Navigate to="/shareholder" replace />} />
             <Route
